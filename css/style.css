@@ -1,0 +1,82 @@
+/*DEFAULTS*/
+* {
+	font-size: 20px;
+	margin: 0px;
+	box-sizing: border-box;
+    
+}
+
+/*Body Defaults*/
+body {
+    background-color: #ccc;
+}
+
+#mainContent {
+    background-color: #fff;
+    width: 960px;
+    margin: 10px 10px;
+    padding: 20px;
+}
+
+/*Center Text*/
+.center {
+    text-align: center;
+}
+
+/*Make text bold*/
+.makebold {
+    font-weight: bold;
+}
+
+
+/***************************/
+/****** Forms Section *****/
+/***************************/
+
+/*Required field indicator*/
+.req {
+    font-weight: bold;
+    color: #f00;
+}
+
+/*Required Fields have red backgrounds*/
+input:required {
+    background-color: #fcc;
+}
+
+/*Form Buttons*/
+.form_button {
+    text-align: center;
+}
+
+.btn {
+    font-size: 1.1rem;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 0.2em;
+    padding: 0.2em 1em;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    margin: 2px;
+}
+
+/*Hover actions for Buttons*/
+.btn:hover {
+    background-color: 	#ccc;
+}
+/***************************/
+/*** End of Forms Section ***/
+/***************************/
+
+/***************************/
+/**** Portfolio Page *****/
+/***************************/
+
+/*Images for Portfolio*/
+.examples img {
+    width: 200px;
+    height: auto;
+}
+
+/***************************/
+/** End of Portfolio Page***/
+/***************************/

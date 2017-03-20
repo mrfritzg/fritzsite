@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	<meta name="description" content="MrFritz Web Development">
+	<title>Contact Me</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="lib/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/mrfritz_inc.png">
+        </div>
+        <nav class="main_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+				<li><a href="https://twitter.com/" class="fa fa-twitter"></a></li>
+				<li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="mainContent">
+        <div class="center">
+            <h1>Contact Me</h1>
+        </div>
+        <form action="contact-form.php" method="post" id="contact-form">
+            <p><span class="req">*</span> indicates required fields</p>
+            <label> First Name <span class="req">*</span><br>
+                <input type="text" name="fname" placeholder="John" required="required">
+            </label>
+            <br>
+            <label>Last Name <br>
+                <input type="text" name="lname" placeholder="Doe">
+            </label>
+            <br>
+            <label>Email <span class="req">*</span><br>
+                <input type="email" name="email" placeholder="email@gmail.com" required="required">
+            </label>
+            <br>
+            <label> Please Enter Your Message <br>
+                <textarea name="info" placeholder="Enter Message Here" cols="50" rows="20"></textarea>
+            </label>
+            <div class="form_button">
+                <input type="submit" name="submit" value="Submit" class="btn">
+                <br>
+                <input type="reset" name="reset this form" value="Reset" class="btn">
+            </div>
+        </form>
+        
+    </div>
+    <footer>
+        <nav class="footer_menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p>&copy;2017 MrFritz Inc, All Rights Reserved. </p>
+        </div>
+    </footer>
+</body>
+</html>

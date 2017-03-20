@@ -2,8 +2,7 @@
 * {
 	font-size: 20px;
 	margin: 0px;
-	box-sizing: border-box;
-    
+	box-sizing: border-box;  
 }
 
 /*Body Defaults*/
@@ -11,11 +10,28 @@ body {
     background-color: #ccc;
 }
 
-#mainContent {
-    background-color: #fff;
-    width: 960px;
-    margin: 10px 10px;
-    padding: 20px;
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 42px;
+}
+
+h3 {
+	font-size: 36px;
+}
+
+h4 {
+	font-size: 32px;
+}
+
+h5 {
+	font-size: 28px;
+}
+
+h6 {
+	font-size: 24px;
 }
 
 /*Center Text*/
@@ -23,9 +39,148 @@ body {
     text-align: center;
 }
 
-/*Make text bold*/
-.makebold {
-    font-weight: bold;
+/*Make text blue*/
+.makeblue {
+    color: mediumblue;
+}
+
+/*No underline on links*/
+a {
+    text-decoration: none;
+}
+
+
+
+/*Header secton*/
+header {
+    position: relative;
+    height: 10vh;
+    background-color: mediumblue;
+    width: 100%;
+    border-bottom: 2px double #fff;
+}
+
+
+/*Logo*/
+#logo {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 10%;
+    margin: 0px;
+    height: 100%;
+}
+
+#logo img {
+    width:auto;
+    height: auto;
+    max-width:100%;
+    max-height:100%;
+    margin: 0px;
+}
+
+/*General Nav Section*/
+
+/*remove bullet points in the Ul*/
+nav ul {
+    list-style: none;
+    padding: 0px;
+}
+
+/*puts the li side by side*/
+nav > ul > li {
+    display: inline-block;
+    vertical-align: bottom;
+    width: 90px;
+    
+}
+
+/*Color of links in the menus will be white*/
+/* remove under line under the links*/
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 5px 0 5px;
+        
+}
+
+
+/*Social Media icons widths*/
+
+nav>ul>li:nth-child(5),
+nav>ul>li:nth-child(6),
+nav>ul>li:nth-child(7) {
+	width: 40px;
+}
+
+nav>ul>li:nth-child(5) a,
+nav>ul>li:nth-child(6) a,
+nav>ul>li:nth-child(7) a {
+	padding: 5px;
+	width: 40px;
+}
+
+/*MAIN MENU SECTION*/
+.main_menu {
+    position: absolute;
+    bottom:2px;
+    right: 10px;
+    
+}
+/*Main Menu hover*/
+.main_menu li:hover a {
+    background-color: #fff;
+    color: mediumblue;
+    font-weight:bold;
+}
+
+/*Current Website*/
+
+.current {
+    background-color: #fff;
+    color: mediumblue;
+    font-weight:bold;
+}
+
+
+/*Main Content Area*/
+#mainContent {
+    background-color: #fff;
+    width: 100%;
+    margin: 10px 10px;
+    padding: 20px;
+    border: 0 2px 2px 2px solid #000;
+/*    border-radius: 10px;*/
+    margin-top: 0px;
+}
+
+/*Footer Menu Hover*/
+/*make the text black*/
+.footer_menu ul li a {
+    color: #000;
+}
+
+/*Keep the color of the links unchanged after being visited*/
+.footer_menu ul li a:visited {
+    color: #000;
+}
+
+/*Footer menu hover*/
+.footer_menu li:hover a {
+    text-decoration: underline;
+    font-weight:bold;
+}
+
+/*Hero Image*/
+.hero {
+    background-image: url(../img/hero2.jpg);
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    margin-bottom: 0;
+        
 }
 
 
@@ -72,7 +227,7 @@ input:required {
 /***************************/
 
 /*Images for Portfolio*/
-.examples img {
+.examples img, .pillar-img {
     width: 200px;
     height: auto;
 }
@@ -80,3 +235,11 @@ input:required {
 /***************************/
 /** End of Portfolio Page***/
 /***************************/
+
+/*Visited & Active links for Pillar sections
+are black*/
+
+.pillar a:visited, .pillar a:link {
+    color: #000;
+}
+
